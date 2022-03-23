@@ -1,0 +1,76 @@
+#header {
+  position: relative;
+  min-height: 80px;
+  background-color: transparent;
+  padding: 1.2rem 0rem;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+#header.active {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+#header.active a {
+  color: #333;
+}
+#header.active label,
+#header.active button {
+  color: #333;
+}
+#header .navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.navbar ul a {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+.profile {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.profile button,
+.profile label {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+}
+.menu-btn {
+  position: relative;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
